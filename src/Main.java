@@ -4,8 +4,8 @@ import aima.Core.environment.*;
 public class Main {
 	
 	public static void main(String[] args) {
-		EnvironmentListener<Object, Object> vacuumViewer = new SimpleEnvironmentView();
-		Environment<VacuumPercept, Action> vacuumEnv = new VacuumEnvironment().addEnvironmentListener(vacuumViewer);
+		EnvironmentListener<Object, Object> vacuumViewer 	 = new SimpleEnvironmentView();
+		Environment<VacuumPercept, Action> vacuumEnvironment = new VacuumEnvironment().addEnvironmentListener(vacuumViewer);
 		
 		Agent simpleAgent 	= new SimpleReflexVacuumAgent();
 		Agent tableAgent 	= new TableDrivenVacuumAgent();
